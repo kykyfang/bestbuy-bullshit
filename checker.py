@@ -11,7 +11,7 @@ webhook_URL = 'https://discord.com/api/webhooks/783757314267938836/YYySym1ai1F5u
 
 
 
-api_key = 'N5yCPpxI8mL0cAnaz6AFsyLI'
+api_key = 'WGSpSXk2TdEKo7vxoeVLp0dH'
 testurl = 'https://api.bestbuy.com/v1/products((search=squadrons))?apiKey=N5yCPpxI8mL0cAnaz6AFsyLI&sort=onlineAvailability.asc&show=name,addToCartUrl,onlineAvailability&format=json'
 
 def check():
@@ -35,7 +35,7 @@ def check_status():
 
 
 def ps5_check():
-    ps5_url = 'https://api.bestbuy.com/v1/products((search=6426149))?apiKey=N5yCPpxI8mL0cAnaz6AFsyLI&sort=onlineAvailability.asc&show=onlineAvailability,sku,name,addToCartUrl&format=json'
+    ps5_url = 'https://api.bestbuy.com/v1/products((search=6426149))?apiKey=WGSpSXk2TdEKo7vxoeVLp0dH&sort=onlineAvailability.asc&show=onlineAvailability,sku,name,addToCartUrl&format=json'
     try:
         items = requests.get(ps5_url)
         items.raise_for_status()
@@ -57,7 +57,7 @@ def ps5_status():
 
 
 def xbox_check():
-    xbox_url = 'https://api.bestbuy.com/v1/products((search=6428324))?apiKey=N5yCPpxI8mL0cAnaz6AFsyLI&sort=onlineAvailability.asc&show=onlineAvailability,sku,name,addToCartUrl&format=json'
+    xbox_url = 'https://api.bestbuy.com/v1/products((search=6428324))?apiKey=WGSpSXk2TdEKo7vxoeVLp0dH&sort=onlineAvailability.asc&show=onlineAvailability,sku,name,addToCartUrl&format=json'
     try:
         items = requests.get(xbox_url)
         items.raise_for_status()

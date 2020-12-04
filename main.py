@@ -27,7 +27,7 @@ def main():
             #print('error checking Xbox', datetime.now().strftime('%m-%d-%y %H:%M'))
         #sleeping loop
         print('checked all status taking a nap', datetime.now().strftime('%H:%M'))
-        sleep(300)
+        sleep(600)
 
 
 # Press the green button in the gutter to run the script.
