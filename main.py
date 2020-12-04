@@ -9,15 +9,15 @@ def main():
             print('checking GTX 3060')
             check_status()
             sleep(5)
-        except:
-            print('error checking GTX3060s', datetime.now().strftime('%m-%d-%y %H:%M'))
+        except Exception as error:
+            print(error, datetime.now().strftime('%m-%d-%y %H:%M'))
         #PS5
         try:
             print('checking PS5')
             ps5_status()
             sleep(5)
-        except:
-            print('error checking PS5', datetime.now().strftime('%m-%d-%y %H:%M'))
+        except Exception as error:
+            print(error, datetime.now().strftime('%m-%d-%y %H:%M'))
         #xbox
         try:
             print('checking xbox')
