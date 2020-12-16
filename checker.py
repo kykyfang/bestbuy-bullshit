@@ -11,7 +11,7 @@ webhook_URL = 'https://discord.com/api/webhooks/783757314267938836/YYySym1ai1F5u
 
 
 
-api_key = 'TuDyD5fAvAXMWJaETuf47uto'
+api_key = 'FHJZXw6OmTXkwxaEkgwm4eDN'
 testurl = 'https://api.bestbuy.com/v1/products((search=squadrons))?apiKey=dGhkpuFjamBybnaKftrxRitU&sort=onlineAvailability.asc&show=name,addToCartUrl,onlineAvailability&format=json'
 
 def check():
