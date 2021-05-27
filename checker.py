@@ -11,17 +11,20 @@ webhook_URL = 'https://discord.com/api/webhooks/783757314267938836/YYySym1ai1F5u
 
 
 
-api_key = '6bF9dwKc89c0gtERALtLyq8G'
+api_key = 'AGf3XutHySy8hDSZqIG9kAGm'
 testurl = 'https://api.bestbuy.com/v1/products((search=squadrons))?apiKey=dGhkpuFjamBybnaKftrxRitU&sort=onlineAvailability.asc&show=name,addToCartUrl,onlineAvailability&format=json'
 
 def check():
-    url = 'https://api.bestbuy.com/v1/products(search=nvidia&search=3060&search=3070)?format=json&show=sku,name,addToCartUrl,onlineAvailability&apiKey=' + api_key
+    url = f'https://api.bestbuy.com/v1/products((search=nvidia&search=3070))?apiKey={api_key}&sort=description.asc&show=onlineAvailability,addToCartUrl,shortDescription,url&format=json'
     try:
         items = requests.get(url)
         items.raise_for_status()
     except:
         raise
     return items.json()
+
+for i in check()['products']:
+    print(i)
 
 def check_status():
     webhook = Webhook.partial(WEBHOOK_ID, WEBHOOK_TOKEN, adapter=RequestsWebhookAdapter())
